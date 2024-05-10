@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer {
+    height: 2rem;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.app-container {
+    flex: 1;
+    display: flex;
+}
+
+main {
+    flex: 1;
+    background-color: lightpink;
+}
+
+nav {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+}
+
+nav button {
+    margin: 2rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    font-size: medium;
+    padding: 0.5rem 1rem;
+    min-width: 10rem;
+}
+
+nav button:hover {
+    border-color: black;
+    background-color: gray;
+    color: white;
+}
+
+nav button:active {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.modal {
+    min-width: 50%;
+    min-height: 50%;
+    max-height: 80%;
+    max-width: 80%;
+    background-color: palegreen;
+}
+
+/* Memory game */
+.memory-game-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.memory-game-card {
+    border: 1px solid black;
+}
+
+.memory-game-card > div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.memory-game-card.face-down {
+    background-color: cornflowerblue;
+}
+
+.memory-game-card.face-down > div {
+    display: none;
+}
+
+/* Hangman */
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Calendar */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 100%;
+}
+
+dialog .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Progress bar */
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    position: relative;
+    height: 3rem;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.bar .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+/* Currency exchange */
+.cex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.cex-container .input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cex-container .input-container > input {
+    max-width: 3rem;
+    margin-right: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cex-container .input-container > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.cex-container .input-container > select {
+    min-width: 15rem;
+}
+
+.cex-container .input-container > .swap-arrow,
+.cex-container .output-container > * {
+    font-size: x-large;
+    padding: 0 5rem;
+}
+
+.cex-container .tab-container {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.cex-container .tab-container .chart-container {
+    width: 100%;
+    height: 3000px;
+}

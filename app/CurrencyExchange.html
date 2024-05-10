@@ -1,0 +1,38 @@
+<div class="cex-container">
+    <div class="input-container">
+        <input type="number" id="amount" value="1" />
+        <select id="fromCurrency"></select>
+        <div class="swap-arrow">→</div>
+        <select id="toCurrency"></select>
+        <button>Calculate</button>
+    </div>
+    <div class="output-container">
+        <span id="fromResult"></span>
+        <span>=</span>
+        <span id="toResult"></span>
+    </div>
+    <div class="tab-container">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Grid</a></li>
+                <li><a href="#tabs-2">Chart</a></li>
+            </ul>
+            <div id="tabs-1">
+                <table id="exchange-rates-tbl" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Rate</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="tabs-2">
+                <div class="chart-container">
+                    <canvas id="exchange-rates-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

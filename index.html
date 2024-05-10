@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Web Programming II. 2024.</title>
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="app-container">
+            <nav>
+                <button data-module="PrimeCalculator">Calculate primes</button>
+                <button data-module="MemoryGame" data-template="MemoryGame">Memory game</button>
+                <button data-module="Hangman">Hangman</button>
+                <button data-module="Calendar" data-template="Calendar">Calendar</button>
+                <button data-module="Arkanoid">Arkanoid</button>
+                <button data-module="ProgressBar" data-template="ProgressBar">Progress bar</button>
+                <button data-module="CurrencyExchange" data-template="CurrencyExchange">Currency exchange</button>
+            </nav>
+            <main id="app-target"></main>
+        </div>
+        <footer id="status">Status text</footer>
+        <dialog class="modal"></dialog>
+    </body>
+</html>
